@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/style-search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="reverse-btn">
+            <div class="back">
+                <i class="fa fa-arrow-circle-o-left" aria-hidden="true" onclick="back()"></i>
+            </div>
+        </div>
+        <div id="navbar-input">
+            <div id="search">
+                <input id="find" type="text" placeholder="Cari kos yuk..." onkeyup="search()">
+            </div>
+            <div id="box">
+                <a id="filter-btn" href="#divFilter-list">Filter</a>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay" id="divFilter-list">
+        <div class="wrapper">
+            <h2>Filter</h2>
+            <a href="" class="close">&times;</a>
+            <div class="content">
+                <div class="container">
+                    <div class="fa">
+                        <h4>Tipe Kos</h4>
+                        <input type="radio" id="pria" name="tipe_kos" value="Pria">
+                        <label for="Pria" >Pria</label>
+                        <input type="radio" id="wanita" name="tipe_kos" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                        <input type="radio" id="campur" name="tipe_kos" value="campur">
+                        <label for="campur">Campur</label>
+                    </div>
+                    <div class="fa">
+                        <h4>Jangka Waktu</h4>
+                        <input type="radio" id="mingguan" name="jangka_waktu" value="mingguan">
+                        <label for="mingguan" >Mingguan</label>
+                        <input type="radio" id="bulanan" name="jangka_waktu" value="bulanan">
+                        <label for="bulanan">Bulanan</label>
+                        <input type="radio" id="tahunan" name="jangka_waktu" value="tahunan">
+                        <label for="tahunan">Tahunan</label>
+                    </div>
+                    <div class="fa">
+                        <h4>Urutkan</h4>
+                        <input type="radio" id="recommended" name="urutkan" value="recommended">
+                        <label for="recommended" >Paling direkomendasikan</label>
+                        <input type="radio" id="termurah" name="urutkan" value="termurah">
+                        <label for="termurah">Harga Termurah</label>
+                        <input type="radio" id="termahal" name="urutkan" value="termahal">
+                        <label for="termahal">Harga Termahal</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="content">
+
+        <!-- List Container -->
+        <div id="list-cont">
+
+            <!-- Diisi pake javascript -->
+
+        </div>
+        <div id="list-cont-new">
+            
+        </div>
+    </div>
+</body>
+<script src="js/script-search.js"></script>
+</html>

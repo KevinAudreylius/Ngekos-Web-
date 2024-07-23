@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-kost.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Ngekost</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="logo.png" alt="NgeKos" width="50%">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="navbar-right">
+
+            <div id="favorite">
+                <div id="fav" onclick="direct('favorite.html')">
+                    <i class="material-icons">favorite</i>
+                </div>
+            </div>
+
+            <div id="cari-kos">
+                <a href="search.html">
+                    <p>cari kos</p>
+                </a>
+                <div id="arrow-down" onclick="direct('#')">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div id="profile">
+                <div id="icon" onclick="direct('profile.html')">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navbar-right-replace">
+            <div id="menu" onclick="menuFunction()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+
+                <div id="menu-item" class="none">
+                    <p onclick="direct('favorite.html')">Favorite</p>
+                    <p onclick="direct('search.html')">cari kos</p>
+                    <p onclick="direct('profile.html')">Profile</p>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <hr>
+
+    <!-- bagian Content -->
+    <div class="content">
+
+        <div class="top">
+            <div class="image">
+                <img src="asset/kos 1 2.png" alt="kost 1" width="48%">
+                <img src="asset/kos1a 2.png" alt="kost 2" width="48%">
+            </div>
+            <div class="description-text">
+                <h5>Fasilitas Kamar :</h5>
+                <p>Spring bed full set</p>
+                <p>Laundry 2 pcs /hari</p>
+                <p>Kitchen set lengkap</p>
+                <p>CCTV 24 jam</p>
+                <p>Parkir motor dan mobil</p>
+                <p>Water heater</p>
+                <p>Meja & kursi belajar</p>
+                <p>Lemari</p>
+                <p>Luas kamar 3m x 4 m</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="title">
+                <h1>Kos Apik Binus Melrose Laluana Residence</h1>
+                <div class="love"><i class="fas fa-heart"></i></div>
+                <div class="share"><i class="fas fa-share"></i></div>
+            </div>
+        
+            <div class="side-detail-sewa">
+                <div class="kost-detail">
+                    <div class="detail">
+                        <div class="location">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <p>Palmerah</p>
+                        </div>
+                        <div class="text">
+                            <p>Campur</p>
+                        </div>
+                        <div class="rate">
+                            <div class="icon-star"><i class="fas fa-star"></i></div>
+                            <p>5.0</p>
+                        </div>
+                        <div class="avaibility">
+                            Available
+                        </div>
+                    </div>
+                    <div class="facility">
+                        <p>Kamar mandi dalam - AC - WIFI</p>
+                    </div>
+                    
+                    <div class="price">
+                        <p>2.000.000</p>
+                    </div>
+                    
+                    <div class="contact">
+                        <button>
+                            <a href="https://wa.me/087700150132" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Hubungi Pemilik Kos
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                    
+                <div class="sewa">
+                    <div class="title"><h4>Tanggal Kos</h4></div>
+                    <form action="">
+                        <div class="center-1">
+                            <button>
+                                <!-- <i class="far fa-calendar-alt"></i>
+                                mulai kost -->
+                                <input type="date">
+                            </button>
+                            <p>-</p>
+                            <button>
+                                <input type="date">
+                            </button>
+                        </div>  
+                        <button class="submit" value="submit">Ajukan Sewa</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script-kost.js"></script>
+</html>
